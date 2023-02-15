@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Container from './components/container.js';
+//  import Success from './components/Success.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component
+{
+  constructor()
+  {
+    super();
+    this.state = {
+      rating:4,
+      success: false,
+    }
+
+    this.setRating = this.setRating.bind(this);
+    this.getRating = this.getRating.bind(this);
+  }
+  setRating()
+  {
+    this.setState((r) => {
+      return({rating:r})
+    })
+  }
+  getRating()
+  {
+    return(this.state.rating);
+  }
+  
+  render()
+  {
+    return(
+      <div className="App">
+        <Container rating={this.setRating()} setR={this.setRating()}/>
+      </div>
+    );
+  }
+
 }
 
 export default App;
