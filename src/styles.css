@@ -67,7 +67,7 @@ body {
   text-align: start;
   letter-spacing: 0.1rem;
   line-height: 1.3rem;
-  margin: 1rem 1rem 2rem 0;
+  margin: 1rem 1rem 1rem 0;
 }
 
 .btn-container {
@@ -75,7 +75,7 @@ body {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   gap: 0.5rem;
-  margin: 2rem 0;
+  margin: 2rem 0 1.5rem;
 }
 
 .btn {
