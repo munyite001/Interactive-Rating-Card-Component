@@ -37,7 +37,7 @@ body {
 
 .App {
   width: 90%;
-  height: 400px;
+  height: 430px;
   max-width: 350px;
   border-radius: 15px;
   background-color: var(--Dark-Blue);
@@ -59,7 +59,7 @@ body {
 
 .container h1 {
   color: var(--clr-White);
-  margin: 2rem 0 1rem;
+  margin: 1rem 0;
 }
 
 .container p {
@@ -67,7 +67,7 @@ body {
   text-align: start;
   letter-spacing: 0.1rem;
   line-height: 1.3rem;
-  margin: 1rem 1rem 1rem 0;
+  margin: 1rem 1rem 2rem 0;
 }
 
 .btn-container {
@@ -75,6 +75,7 @@ body {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   gap: 1rem;
+  margin: 2rem 0;
 }
 
 .btn {
