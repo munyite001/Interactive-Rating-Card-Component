@@ -4,8 +4,6 @@ import Button from './Button.js';
 
 export default function Container(props)
 {
-  props.setR(4);
-  console.log(props.rating)
   return(
     <div className="container">
       <div className="star-container">
@@ -23,7 +21,15 @@ export default function Container(props)
         <Button value="4" setRate={props.rating}/>
         <Button value="5" setRate={props.rating}/>
       </div>
-      <button className="submit"> Submit </button>
+      <button className="submit" onClick={() => {setSubmit(props)}}> Submit </button>
     </div>
   );
+}
+
+function setSubmit(props)
+{
+  if (props.getRateValue() !== 0)
+  {
+    props.submitStatus();
+  }
 }

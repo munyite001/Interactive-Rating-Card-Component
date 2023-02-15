@@ -3,13 +3,16 @@ import React from 'react';
 export default function Button(props)
 {
   return(
-    <div className="btn" onClick={clicked}>
+    <div className="btn" onClick={(e) => 
+    {
+      clicked(e,props)
+    }}>
       {props.value}
     </div>
   )
 }
 
-function clicked(e)
+function clicked(e,props)
 {
   // let rating = e.currentTarget.textContent; 
   const btns = document.querySelectorAll('.btn');
@@ -18,4 +21,5 @@ function clicked(e)
   });
 
   e.currentTarget.classList.add('active-btn');
+  props.setRate(props.value);
 }
