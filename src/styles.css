@@ -37,11 +37,11 @@ body {
 
 .App {
   width: 90%;
-  height: 430px;
+  height: auto;
   max-width: 350px;
   border-radius: 15px;
   background-color: var(--Dark-Blue);
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
 .star-container {
@@ -75,7 +75,7 @@ body {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   gap: 0.5rem;
-  margin: 2rem 0 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .btn {
@@ -84,7 +84,7 @@ body {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  padding: 0.8rem;
+  padding: 1rem;
   color: var(--Medium-Grey);
   font-weight: 700;
   font-size: 20px;
